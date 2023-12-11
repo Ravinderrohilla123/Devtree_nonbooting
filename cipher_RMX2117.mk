@@ -24,13 +24,13 @@ $(call inherit-product, device/realme/RMX2117/device.mk)
 
 # Inherit some common cipherOS stuff.
 #$(call inherit-product, vendor/minati/common.mk)
-$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
+#$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
-CIPHER_MAINTAINER := TechyMinati
+aosp_MAINTAINER := Drwolf
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cipher_RMX2117
+PRODUCT_NAME := aosp_RMX2117
 PRODUCT_DEVICE := RMX2117
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme Narzo 30 Pro 5G
