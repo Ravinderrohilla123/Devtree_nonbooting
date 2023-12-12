@@ -20,18 +20,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Inherit Vendor Blobs
 $(call inherit-product, vendor/realme/RMX2117/RMX2117-vendor.mk)
-$(call inherit-product, vendor/mainline_modules/config.mk)
+#$(call inherit-product, vendor/mainline_modules/config.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # RealmeParts
-#$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
-#PRODUCT_COPY_FILES += \
-   # packages/apps/RealmeParts/init/parts.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/parts.rc
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/parts.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/parts.rc
 
 # Init scripts
-#PRODUCT_PACKAGES += \
-      #  parts.rc
+PRODUCT_PACKAGES += \
+        parts.rc
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1920
