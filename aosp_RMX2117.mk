@@ -22,7 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from RMX2117 device
 $(call inherit-product, device/realme/RMX2117/device.mk)
 
+
+# Inherit from common AOSP configuration
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
 # Inherit some common cipherOS stuff.
+
 #$(call inherit-product, vendor/minati/common.mk)
 #$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
