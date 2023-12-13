@@ -19,5 +19,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     aosp_RMX2117-user \
-    aosp_RMX2117-userdebug \
-    aosp_RMX2117-eng
+    aosp_RMX2117-userdebug 
