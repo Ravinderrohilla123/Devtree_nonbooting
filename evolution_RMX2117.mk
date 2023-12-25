@@ -23,8 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/realme/RMX2117/device.mk)
 
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from common EvolutionX configuration
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit some common cipherOS stuff.
 
@@ -35,7 +35,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 aosp_MAINTAINER := Drwolf
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX2117
+PRODUCT_NAME := evolution_RMX2117
 PRODUCT_DEVICE := RMX2117
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme Narzo 30 Pro 5G
