@@ -48,3 +48,8 @@ service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
 on property:sys.boot_completed=1
     # Stop the logger service
     stop logger
+
+# DT2W
+    chown system system /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
+
