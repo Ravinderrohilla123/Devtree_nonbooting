@@ -141,6 +141,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     MtkInCallService
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-RMX2117
+
 # RealmeParts
 #$(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
