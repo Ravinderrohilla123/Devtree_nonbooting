@@ -7,7 +7,7 @@
  */
 
 android_app {
-    name: "DT2W-Service-Cannon",
+    name: "DT2W-Service-RMX2117",
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -21,13 +21,13 @@ android_app {
     },
 
     required: [
-        "privapp-permissions_org.lineageos.dt2w.cannon"
+        "privapp-permissions_org.lineageos.dt2w.RMX2117"
     ]
 }
 
 prebuilt_etc {
-    name: "privapp-permissions_org.lineageos.dt2w.cannon",
+    name: "privapp-permissions_org.lineageos.dt2w.RMX2117",
     sub_dir: "permissions",
-    src: "privapp-permissions_org.lineageos.dt2w.cannon.xml",
+    src: "privapp-permissions_org.lineageos.dt2w.RMX2117.xml",
     filename_from_src: true,
 }
