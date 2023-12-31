@@ -145,6 +145,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DT2W-Service-RMX2117
 
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl:64 \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
+
+
 # RealmeParts
 #$(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
